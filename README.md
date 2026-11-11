@@ -110,7 +110,7 @@ On the next session start the plugin's SessionStart hook composes into `.claude/
 For development, clone the repository and install its dev dependencies:
 
 ```sh
-git clone --recurse-submodules https://github.com/amadeus-dlc/aidlc-grilling-plugin.git
+git clone --recurse-submodules https://github.com/ideo-plus/aidlc-grilling-plugin.git
 cd aidlc-grilling-plugin/grilling
 bun install        # dev dependencies only — installs nothing into any project
 ```
@@ -151,7 +151,7 @@ describes the preflight and the CI tag check.
 
 ## Getting help
 
-- Issues: <https://github.com/amadeus-dlc/aidlc-grilling-plugin/issues>
+- Issues: <https://github.com/ideo-plus/aidlc-grilling-plugin/issues>
 
 ## License
 

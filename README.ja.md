@@ -29,7 +29,7 @@
 
 ```sh
 VERSION=v0.2.0
-curl -fsSL "https://raw.githubusercontent.com/amadeus-dlc/aidlc-grilling-plugin/${VERSION}/grilling/scripts/install.ts" |
+curl -fsSL "https://raw.githubusercontent.com/ideo-plus/aidlc-grilling-plugin/${VERSION}/grilling/scripts/install.ts" |
   bun - --project <your-aidlc-project> --tag "${VERSION}"   # --harness codex, kiro, …（既定: claude）
 ```
 
@@ -82,7 +82,7 @@ codex plugin add aidlc-grilling@aidlc-plugins   # 初回のみフックの信頼
 開発する場合は、リポジトリを clone して dev 依存を導入します：
 
 ```sh
-git clone --recurse-submodules https://github.com/amadeus-dlc/aidlc-grilling-plugin.git
+git clone --recurse-submodules https://github.com/ideo-plus/aidlc-grilling-plugin.git
 cd aidlc-grilling-plugin/grilling
 bun install        # dev 依存のみ——どのプロジェクトにも何もインストールしません
 ```
@@ -122,7 +122,7 @@ bun run test:live               # opt-in: Agent SDK 経由で本物の Claude Co
 
 ## ヘルプ
 
-- Issues: <https://github.com/amadeus-dlc/aidlc-grilling-plugin/issues>
+- Issues: <https://github.com/ideo-plus/aidlc-grilling-plugin/issues>
 
 ## ライセンス
 

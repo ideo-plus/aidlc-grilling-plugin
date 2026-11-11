@@ -41,7 +41,7 @@ import { spawnSync } from "node:child_process";
 const USAGE =
   "Usage: bun grilling/scripts/install.ts --project <path> [--harness <name>] [--from <repo-root> | --ref <branch> | --tag <tag>] [--update] [--dry-run] [--skip-build]";
 
-const REPOSITORY = "amadeus-dlc/aidlc-grilling-plugin";
+const REPOSITORY = "ideo-plus/aidlc-grilling-plugin";
 const PLUGIN_NAME = "grilling";
 const PROVENANCE_FILE = "grilling-install.json";
 const USER_AGENT = `${PLUGIN_NAME}-installer`;

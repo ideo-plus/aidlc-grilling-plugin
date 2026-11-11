@@ -52,7 +52,7 @@
 
 ```sh
 VERSION=v0.2.0
-curl -fsSL "https://raw.githubusercontent.com/amadeus-dlc/aidlc-grilling-plugin/${VERSION}/grilling/scripts/install.ts" |
+curl -fsSL "https://raw.githubusercontent.com/ideo-plus/aidlc-grilling-plugin/${VERSION}/grilling/scripts/install.ts" |
   bun - --project <your-aidlc-project> --tag "${VERSION}"   # --harness codex, kiro, …（既定: claude）
 ```
 
