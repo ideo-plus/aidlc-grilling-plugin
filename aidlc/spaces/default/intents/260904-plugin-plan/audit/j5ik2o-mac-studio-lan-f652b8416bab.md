@@ -5013,7 +5013,7 @@
 **Timestamp**: 2026-09-04T11:17:17Z
 **Event**: PLAN_APPROVAL_BLOCKED
 **Tool**: Write
-**Target**: /private/tmp/claude-501/-Users-j5ik2o-Sources-j5ik2o-github-com-amadeus-dlc-aidlc-grilling-plugin/8aa8fb1b-b488-4902-ae8e-3e91f7a355e5/scratchpad/learnings-code-generation.json
+**Target**: /private/tmp/claude-501/-Users-j5ik2o-Sources-j5ik2o-github-com-ideo-plus-aidlc-grilling-plugin/8aa8fb1b-b488-4902-ae8e-3e91f7a355e5/scratchpad/learnings-code-generation.json
 **Stage**: code-generation
 **Unit**: stage-level
 
@@ -6744,7 +6744,7 @@
 **Timestamp**: 2026-09-04T13:58:54Z
 **Event**: PLAN_APPROVAL_BLOCKED
 **Tool**: Bash
-**Target**: shell command: find <project-dir>/.claude/knowledge/aidlc-shared /Users/j5ik2o/Sources/j5ik2o.github.com/amadeus-dl
+**Target**: shell command: find <project-dir>/.claude/knowledge/aidlc-shared /Users/j5ik2o/Sources/j5ik2o.github.com/ideo-plus
 **Stage**: code-generation
 **Unit**: stage-level
 

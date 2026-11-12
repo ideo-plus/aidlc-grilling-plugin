@@ -28,7 +28,7 @@ X. Other (please specify)
 
 A. AI-DLC v2 を使う開発者全般（7 ハーネスの利用者）— 配布物として仕上げる
 B. まずメンテナ自身の AI-DLC 利用体験の改善。配布は副次的
-C. amadeus-dlc 配下の姉妹プラグイン利用者も含めた内部利用者
+C. ideo-plus 配下の姉妹プラグイン利用者も含めた内部利用者
 D. A を目標にしつつ、今回の作業は B の範囲で止める
 E. Not identified（まだ決めていない）
 X. Other (please specify)

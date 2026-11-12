@@ -8,7 +8,7 @@
 
 参照先の `install.ts` は 732 行で、ソース取得（`--tag` / `--ref` / `--from` / latest）、tar.gz 展開（パストラバーサル・リンク拒否）、ハーネス投影の build、store 系は `dist/` から compose・storeless 系はフォルダドロップ、`aidlc plugin sync` または `hooks/compose.ts` の実行、provenance 記録、`--update`、`--dry-run` を備え、テスト 162 行で選択順序・アーカイブ安全性・ダイジェストを検証しています。プラグイン名・リポジトリ名・provenance ファイル名は定数 3 つに集約されています。
 
-A. 参照先を写し、定数（`grilling` / `amadeus-dlc/aidlc-grilling-plugin` / `grilling-install.json`）と deep-spec 固有の後処理（stage の案内・doctor ツールの探索）だけを差し替える。ファイルは参照先と同じく `install.ts` と `release.ts` の 2 本に分ける
+A. 参照先を写し、定数（`grilling` / `ideo-plus/aidlc-grilling-plugin` / `grilling-install.json`）と deep-spec 固有の後処理（stage の案内・doctor ツールの探索）だけを差し替える。ファイルは参照先と同じく `install.ts` と `release.ts` の 2 本に分ける
 B. 必要最小限の独自実装にする（`--from` / `--tag` / `--dry-run` のみ、`--ref` / `--update` / latest 解決は省く）
 C. 参照先と共通のライブラリに切り出して両プラグインで共有する
 D. Not yet defined（まだ決めていない）
@@ -97,7 +97,7 @@ X. Other (please specify)
 
 回答のまとめ:
 
-- Q1（インストーラ）= A: 参照先 deep-spec-analysis の `install.ts` を写し、定数（`grilling` / `amadeus-dlc/aidlc-grilling-plugin` / `grilling-install.json`）と deep-spec 固有の後処理だけ差し替える。`install.ts` と `release.ts` の 2 本に分ける（「一旦Aで。後々リファクタリングしよう」）
+- Q1（インストーラ）= A: 参照先 deep-spec-analysis の `install.ts` を写し、定数（`grilling` / `ideo-plus/aidlc-grilling-plugin` / `grilling-install.json`）と deep-spec 固有の後処理だけ差し替える。`install.ts` と `release.ts` の 2 本に分ける（「一旦Aで。後々リファクタリングしよう」）
 - Q2（完了案内）= A: 「次の質問ステージのモード選択に Grill me が 4 択目として現れる」ことと、エンジン更新後は `/aidlc plugin sync` を再実行することを表示する
 - Q3（リリースツール）= A: 参照先と同じ（事前検査 → manifest 更新 → 英語コミット → タグ → atomic push、`--check-tag` あり）
 - Q4（文書の置き場）= A: ルート `docs/` は現状維持（計画書はそこで完了記録化）、`grilling/docs/decisions.md` と `decisions.ja.md` を新設

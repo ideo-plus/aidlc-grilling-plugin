@@ -1,4 +1,4 @@
-<!-- Copied on 2026-09-03 from amadeus-dlc/aidlc-deep-spec-analysis-plugin: aidlc/spaces/default/knowledge/aidlc-shared/aidlc-engine-operations.md. Examples and commands (installer, file counts, sensor names) refer to that repository. Adapted for this repository in three places: the engine checkout is pinned to a tag/commit instead of origin/main (§1), the shell update overwrites upstream-managed files instead of deleting .claude/ first (§1), and the live-fire step of the verification matrix points at this repository's own procedure (§6). -->
+<!-- Copied on 2026-09-03 from ideo-plus/aidlc-deep-spec-analysis-plugin: aidlc/spaces/default/knowledge/aidlc-shared/aidlc-engine-operations.md. Examples and commands (installer, file counts, sensor names) refer to that repository. Adapted for this repository in three places: the engine checkout is pinned to a tag/commit instead of origin/main (§1), the shell update overwrites upstream-managed files instead of deleting .claude/ first (§1), and the live-fire step of the verification matrix points at this repository's own procedure (§6). -->
 
 # エンジンとシェルの更新、プラグインの再 compose
 

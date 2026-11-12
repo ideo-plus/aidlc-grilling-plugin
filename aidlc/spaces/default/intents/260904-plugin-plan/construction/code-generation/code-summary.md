@@ -16,7 +16,7 @@
 
 | ファイル | 変更 | 内容 |
 |---|---|---|
-| `grilling/scripts/install.ts` | 新規（736 行） | 参照先 deep-spec-analysis の `install.ts` を写し、定数（`amadeus-dlc/aidlc-grilling-plugin` / `grilling` / `grilling-install.json`）、Usage、完了案内（ADR-007 の 2 点）を差し替え、deep-spec 固有の後処理（doctor の探索、stage の案内、センサー検査）を削除。`REMOVED_PAYLOADS` は空（BR8.9） |
+| `grilling/scripts/install.ts` | 新規（736 行） | 参照先 deep-spec-analysis の `install.ts` を写し、定数（`ideo-plus/aidlc-grilling-plugin` / `grilling` / `grilling-install.json`）、Usage、完了案内（ADR-007 の 2 点）を差し替え、deep-spec 固有の後処理（doctor の探索、stage の案内、センサー検査）を削除。`REMOVED_PAYLOADS` は空（BR8.9） |
 | `grilling/scripts/release.ts` | 新規（164 行） | 参照先の `release.ts` を写し、manifest のパスと Usage を差し替え。事前検査 4 種、`--allow-empty` のコミット、タグ、`push --atomic`、`--check-tag`、`GitRunner` の注入 |
 
 ### VerificationSuite

@@ -1,6 +1,6 @@
 # `src/` の構成の型（deep-spec-analysis の実装から）
 
-姉妹プラグイン [aidlc-deep-spec-analysis-plugin](https://github.com/amadeus-dlc/aidlc-deep-spec-analysis-plugin) の `deep-spec-analysis/src/`（2026-09-03 時点）を読んで整理した、`grilling/src/` を DDD のマルチパッケージ構成で組むときの型。規則の正本は同リポジトリの `tests/architecture/rules.ts` と `docs/decisions.ja.md`（「DDD 移行 PR0〜PR9」「src/・tools 配布分離の裁定」）。モデリングの型そのものは [domain-modeling.md](domain-modeling.md)。
+姉妹プラグイン [aidlc-deep-spec-analysis-plugin](https://github.com/ideo-plus/aidlc-deep-spec-analysis-plugin) の `deep-spec-analysis/src/`（2026-09-03 時点）を読んで整理した、`grilling/src/` を DDD のマルチパッケージ構成で組むときの型。規則の正本は同リポジトリの `tests/architecture/rules.ts` と `docs/decisions.ja.md`（「DDD 移行 PR0〜PR9」「src/・tools 配布分離の裁定」）。モデリングの型そのものは [domain-modeling.md](domain-modeling.md)。
 
 ## 1. 物理構成: コンテキスト × 層 = 1 パッケージ
 

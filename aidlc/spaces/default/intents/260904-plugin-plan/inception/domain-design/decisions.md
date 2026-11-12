@@ -5,7 +5,7 @@
 ## ADR-001: インストーラは参照先 deep-spec-analysis の install.ts を写す
 
 - **Context** — FR4 は 1 コマンド導入（タグ / ブランチ / ローカルのソース選択、投影 build、compose、provenance、--update、--dry-run）を求める。参照先は同じ要件を 732 行の単一スクリプトと 162 行のテストで満たしており、品質の上限は参照先との同等（C5）と決まっている。プラグイン名・リポジトリ名・provenance ファイル名は定数 3 つに集約されている。
-- **Decision** — 参照先の `scripts/install.ts` を写し、定数（`grilling` / `amadeus-dlc/aidlc-grilling-plugin` / `grilling-install.json`）と deep-spec 固有の後処理（stage の案内・doctor ツールの探索）だけを差し替える。ファイルは参照先と同じく `install.ts` と `release.ts` の 2 本に分ける。人は「一旦Aで。後々リファクタリングしよう」と付言した（Q1）。
+- **Decision** — 参照先の `scripts/install.ts` を写し、定数（`grilling` / `ideo-plus/aidlc-grilling-plugin` / `grilling-install.json`）と deep-spec 固有の後処理（stage の案内・doctor ツールの探索）だけを差し替える。ファイルは参照先と同じく `install.ts` と `release.ts` の 2 本に分ける。人は「一旦Aで。後々リファクタリングしよう」と付言した（Q1）。
 - **Consequences** — 正: 参照先で検証済みの挙動（アーカイブ安全性、選択順序、冪等性）をそのまま得られ、「同等」の判定が容易。負: 2 リポジトリに同型のコードが並び、参照先の修正を追従する必要がある。中立: リファクタリングは後日の別作業。
 - **Security implications** — Installer はリモートのソースアーカイブを取得・展開し、対象プロジェクトへ書き込むため、セキュリティ境界に触れる決定である。参照先が持つ 3 つの防御をそのまま引き継ぐ: (1) tar.gz 展開でパストラバーサルとリンク（symlink / hardlink）を拒否し、展開先の外へ書かない、(2) `--project` の外へは一切書き込まず、symlink を追わない、(3) 認証情報を扱わず、GitHub の公開アーカイブ API だけを使う（provenance にはダイジェストと選択子のみ記録）。これらは要求 NFR6（安全性）と NFR5（再現性）の実装であり、`installer.test.ts` の「rejects path traversal and archive links」に相当するテストで検証する（FR4.4）。フォルダドロップ経路には store のような信頼ゲートがないため、README で「実行してよいビルドにだけ向ける」と明記する（FR3.2）。
 - **Alternatives Rejected** — (a) 必要最小限の独自実装（--from / --tag / --dry-run のみ）: 短いが、参照先との差が「同等」の判定を難しくし、README の表も変わる。(b) 参照先と共通のライブラリに切り出す: 2 リポジトリを跨ぐ配布経路が要り、今回の範囲（C5）を超える。(c) Installer と ReleaseTool を 1 本に統合: 参照先と構成が変わる。
