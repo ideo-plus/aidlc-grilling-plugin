@@ -4,7 +4,7 @@
 
 規則そのもの（何をしてよく、何をしてはいけないか）は `aidlc/spaces/default/memory/project.md` の `## Mandated` に置き、ここには「なぜそうなのか」「どう作るのか」「どこで転ぶのか」を書く。両者が食い違ったら memory が勝つ。
 
-出発点として、姉妹プラグイン [aidlc-deep-spec-analysis-plugin](https://github.com/amadeus-dlc/aidlc-deep-spec-analysis-plugin) の `knowledge/aidlc-shared/` から、このリポジトリにも当てはまるものを 2026-09-03 にコピーした（各ファイル冒頭に出典を記載）。形式検証バックエンドの運用ノウハウ（`formal-verification-ops.md`）は grilling に関係しないので持ち込んでいない。
+出発点として、姉妹プラグイン [aidlc-deep-spec-analysis-plugin](https://github.com/ideo-plus/aidlc-deep-spec-analysis-plugin) の `knowledge/aidlc-shared/` から、このリポジトリにも当てはまるものを 2026-09-03 にコピーした（各ファイル冒頭に出典を記載）。形式検証バックエンドの運用ノウハウ（`formal-verification-ops.md`）は grilling に関係しないので持ち込んでいない。
 
 | ファイル | 内容 | 主な読み手 |
 |---|---|---|

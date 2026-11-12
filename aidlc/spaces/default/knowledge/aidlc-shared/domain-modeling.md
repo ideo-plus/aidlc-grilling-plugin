@@ -1,4 +1,4 @@
-<!-- Copied on 2026-09-03 from amadeus-dlc/aidlc-deep-spec-analysis-plugin: aidlc/spaces/default/knowledge/aidlc-shared/domain-modeling.md. Examples and commands refer to that repository; the patterns apply here as-is. -->
+<!-- Copied on 2026-09-03 from ideo-plus/aidlc-deep-spec-analysis-plugin: aidlc/spaces/default/knowledge/aidlc-shared/domain-modeling.md. Examples and commands refer to that repository; the patterns apply here as-is. -->
 
 # ドメインモデリングの型（Tell-Don't-Ask 全数反転で確立したもの）
 

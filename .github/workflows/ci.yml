@@ -8,7 +8,7 @@ on:
 
 # Least privilege: CI only reads. review-thread-resolution is the one job that
 # takes checks / statuses write, and it takes them per job (after
-# amadeus-dlc/amadeus-ng's ci.yml).
+# ideo-plus/amadeus-ng's ci.yml).
 permissions:
   contents: read
 
@@ -62,7 +62,7 @@ jobs:
             bun ../aidlc-workflows/core/tools/aidlc-plugin-build.ts . "$h"
           done
 
-  # Line coverage gate (amadeus-dlc/amadeus-ng's coverage job, ported to Bun).
+  # Line coverage gate (ideo-plus/amadeus-ng's coverage job, ported to Bun).
   # scripts/coverage.ts derives line coverage from the lcov `bun test --coverage`
   # writes and judges an absolute gate (90% floor) plus, on pull_request, a
   # relative gate against the base ref. What is measured, and what is excluded,
@@ -106,7 +106,7 @@ jobs:
         if: github.event_name != 'pull_request'
         run: bun scripts/coverage.ts
 
-  # Review thread gate (after amadeus-dlc/amadeus-ng's ci.yml): a PR with
+  # Review thread gate (after ideo-plus/amadeus-ng's ci.yml): a PR with
   # unresolved review threads (bot comments, CodeRabbit's included) does not get
   # "CI Success". Boilerplate such as a bot reporting that it hit its usage limit
   # is ignored. Evaluated on pull_request only; skipped on push (CI Success

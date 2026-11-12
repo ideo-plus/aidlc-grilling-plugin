@@ -2,7 +2,7 @@
 //
 // coverage.ts — line coverage gate over the lcov `bun test --coverage` writes.
 //
-// Ported from amadeus-dlc/amadeus-ng's scripts/coverage.sh (cargo-llvm-cov) by
+// Ported from ideo-plus/amadeus-ng's scripts/coverage.sh (cargo-llvm-cov) by
 // way of deep-spec-analysis/scripts/coverage.ts: the gate shape (absolute plus
 // relative, a throwaway worktree for the base, a float tolerance) is kept and
 // only the measurement is Bun's.
